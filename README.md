@@ -1,5 +1,7 @@
 # DEVUMI EMAIL WORKFLOW
 
+![alt text](https://github.com/Devumi/emails/blob/master/EmailWorflow.png "Logo Title Text 1")
+
 ## Getting Started
 #### 1. Install dependencies
 
