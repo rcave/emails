@@ -38,7 +38,7 @@ The compiled and inlined output email will be in the `build/` directory.
 
 Templates are stored in `src/templates/**` and partials in `src/templates/**/partials`. To create a template, create a file in the templates directory with the `.nunjucks` file extension.
 
-NOTE: (** is the file directory for the email project)
+NOTE: (** is the file directory for the email project).
 
 To include a partial in your template, use the following syntax -
 
@@ -74,9 +74,10 @@ Content goes here
 
 #### CSS
 
-SASS files are stored in the `src/sass/` directory. There are two main SASS files -
+SASS files are stored in the `src/sass/**` directory.
 
-- `inline.scss` for styles you w Liant to be inlined to their elements
-- `embedded.scss` for styles that shouldn't be inlined. These will be inlcluded within a `<style>` element in the `<head>`
+NOTE: (** is the file directory for the email project).
+
+- `inline.scss` for styles to be inlined to their elements
 
 You can create subdirectories within the SASS folder to hold any partials. Make sure to precede the name of a partial with an underscore, e.g. `_reset.scss`.
