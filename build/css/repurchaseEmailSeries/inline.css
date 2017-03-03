@@ -1,4 +1,9 @@
 /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +20,9 @@ img {
   max-width: 100%;
 }
 
-table {
+table, tr, td {
   border-collapse: collapse !important;
+  border-spacing: 0 !important;
 }
 
 /* CLIENT SPECIFIC STYLES */
@@ -59,13 +65,37 @@ img {
 }
 
 body {
-  background: red;
+  margin-left: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 .main-container {
-  font-size: 50px;
+  text-align: center;
+  display: table;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.crap {
-  display: none;
+.main-container .main-column {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container .half {
+  width: 50%;
+}
+
+.header-main {
+  width: 100%;
+}
+
+.header-main .welcome {
+  text-align: left;
+}
+
+.header-main .browser {
+  text-align: right;
 }

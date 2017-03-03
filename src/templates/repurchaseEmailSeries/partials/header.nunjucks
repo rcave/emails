@@ -6,11 +6,17 @@
 </head>
 <body>
     <table class="main-container">
-        <tr class="main-column">
-            <td class="main-row">
-                <table class="header">
+        <tr class="main-row">
+            <td class="main-column">
+                <table class="header-main">
                     <tr>
-                        <td class="welcome"></td>
-                        <td class="browser"></td>
+                        <td class="welcome half">Welcome back</td>
+                        <td class="browser half"><a href="*|ARCHIVE|*">View in Browser</a></td>
+                    </tr>
+                </table>
+                <table class="header-logo">
+                    <tr>
+                        <td class="logo"><a href="https://www.devumi.com"><img src="../images/repurchaseEmailSeries/devumi_logo.png" alt="Devumi" src=""/></a></td>
+                        <td class="social"></td>
                     </tr>
                 </table>
