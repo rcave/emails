@@ -1,0 +1,22 @@
+{
+  "name": "emails",
+  "version": "1.0.0",
+  "description": "Bytion Emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "postcss-scss": "^0.4.1"
+  }
+}

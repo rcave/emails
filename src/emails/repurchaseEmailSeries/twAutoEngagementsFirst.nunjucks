@@ -1,0 +1,5 @@
+{% extends "repurchaseEmailSeries/repurchaseTemplate.nunjucks" %}
+
+{% block preheader %}
+    <h2>A gulp workflow for building HTML emails</h2>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% include "repurchaseEmailSeries/partials/header.nunjucks" %}
+
+<table class="email-content">
+    <tr>
+        <td>
+            {% block preheader %}{% endblock %}
+        </td>
+    </tr>
+</table>
+
+{% include "repurchaseEmailSeries/partials/footer.nunjucks" %}
