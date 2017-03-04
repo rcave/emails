@@ -9,6 +9,7 @@ This workflow requires the following dependencies:
 
 - Node.js
 - Gulp.js (Install with `npm install gulp`)
+- livereload - Chrome Extension
 
 
 #### 2. Clone this repository
@@ -27,7 +28,7 @@ npm install
 #### 4. Start build
 
 ```
-npm start
+gulp
 ```
 
 The compiled and inlined output email will be in the `build/` directory.
@@ -83,3 +84,18 @@ NOTE: (** is the file directory for the email project).
 - `inline.scss` for styles to be inlined to their elements
 
 You can create subdirectories within the SASS folder to hold any partials. Make sure to precede the name of a partial with an underscore, e.g. `_reset.scss`.
+
+#### SENDING EMAILS
+
+Email Sandbox is currently setup using Mailgun.
+
+Mailgun Credentials: rudy@bytion.co | bytion123
+
+NOTE: emails can only be sent to authorized recipients.
+To authorize a recipient:
+* Navigate to https://app.mailgun.com/app/account/authorized
+* Login using credentials above
+* Enter email you would like to receive test emails to
+* A confirmation email is sent to the email address added.
+* Accept the ability to receive emails in the confirmation email
+* Update gulpfile.js mailgun task - Sender, Recipent, and Subject
