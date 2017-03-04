@@ -21,6 +21,7 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var scss = require('postcss-scss');
 var autoprefixer = require('autoprefixer');
+var livereload = require('gulp-livereload');
 var postcssProcessors = [
     autoprefixer( { browsers: ['last 2 versions', 'ie > 10'] } )
 ]
@@ -49,7 +50,21 @@ gulp.task('inlinecss', ['sassInline', 'nunjucks'], function() {
             })
             .on('error', gutil.log)
         )
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('build/'))
+        .pipe(livereload());
+});
+
+// Mailgun
+var sendmail = require('gulp-mailgun');
+
+gulp.task('sendmail', function () {
+  gulp.src( 'build/**/*.html') // Modify this to select the HTML file(s)
+  .pipe(sendmail({
+    key: 'key-cc74c576ffc6780338ce20a04330d9dc', // Enter your Mailgun API key here
+    sender: 'from@test.com',
+    recipient: 'rudy <rudy@bytion.co>',
+    subject: 'This is a test email'
+  }));
 });
 
 // Connect
@@ -61,7 +76,6 @@ gulp.task('connect', function() {
     });
 });
 
-
 // Watch
 var filesToWatch = [
     'src/sass/**/*.scss',
@@ -70,8 +84,9 @@ var filesToWatch = [
 ]
 
 gulp.task('watch', function() {
-    gulp.watch(filesToWatch,['nunjucks', 'inlinecss']);
+    livereload.listen();
+    gulp.watch(filesToWatch,['nunjucks', 'inlinecss', 'sendmail']);
 });
 
 // Default
-gulp.task('default', ['connect', 'nunjucks', 'inlinecss', 'watch']);
+gulp.task('default', ['connect', 'nunjucks', 'inlinecss', 'watch', 'sendmail']);
