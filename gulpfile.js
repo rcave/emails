@@ -27,7 +27,7 @@ var postcssProcessors = [
 ]
 
 gulp.task('sassInline', function(callback) {
-    return gulp.src('src/sass/**/inline.scss')
+    return gulp.src('src/sass/**/*_final.scss')
         .pipe(
            postcss(postcssProcessors, {syntax: scss})
         )
@@ -85,8 +85,8 @@ var filesToWatch = [
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch(filesToWatch,['nunjucks', 'inlinecss', 'sendmail']);
+    gulp.watch(filesToWatch,['nunjucks', 'inlinecss']);
 });
 
 // Default
-gulp.task('default', ['connect', 'nunjucks', 'inlinecss', 'watch', 'sendmail']);
+gulp.task('default', ['connect', 'nunjucks', 'inlinecss', 'watch']);

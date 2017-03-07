@@ -1,0 +1,195 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+table, tr, td {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+/* CLIENT SPECIFIC STYLES */
+/* Force Outlook to provide a "view in browser" message */
+#outlook a {
+  padding: 0;
+}
+
+.ReadMsgBody {
+  width: 100%;
+}
+
+.ExternalClass {
+  width: 100%;
+  line-height: 100%;
+}
+
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+body, table, td, p, a, li, blockquote {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Remove spacing between tables in Outlook 2007 and up */
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+* {
+  font-family: 'MS Sans Serif', Geneva, sans-serif;
+}
+
+body {
+  margin-left: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.main-container {
+  text-align: center;
+  display: table;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-container .main-column {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container .half {
+  width: 50%;
+  color: #A8A8A8;
+}
+
+.main-container .half a {
+  color: #A8A8A8;
+}
+
+.header-main {
+  background: #DFDFDF;
+  width: 100%;
+}
+
+.header-main tr {
+  height: 45px;
+}
+
+.header-main .welcome {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.header-main .browser {
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+.header-logo tr {
+  height: 45px;
+  background: #F5F5F5;
+}
+
+.header-logo .social a {
+  vertical-align: middle;
+}
+
+.header-logo .social a img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.footer-main {
+  background: #DFDFDF;
+  width: 100%;
+}
+
+.footer-main .social-icons {
+  height: 100px;
+}
+
+.footer-main .social-icons a {
+  text-decoration: none;
+}
+
+.footer-main .social-icons img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.footer-main .devumi-foot-logo {
+  height: 50px;
+}
+
+.footer-main .devumi-foot-logo td {
+  text-align: left;
+  padding: 0 30px;
+}
+
+.footer-main .foot-content {
+  text-align: left;
+  height: 350px;
+}
+
+.footer-main .foot-content td {
+  padding: 0 30px;
+}
+
+.footer-main .foot-content td p {
+  margin-bottom: 30px;
+  color: #A8A8A8;
+}
+
+.footer-main .foot-content td p:last-child {
+  font-size: 13px;
+}
+
+.footer-main .foot-content td a {
+  text-decoration: none;
+  color: #A8A8A8;
+  cursor: pointer;
+}
+
+.email-content {
+  width: 100%;
+}

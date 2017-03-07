@@ -1,11 +1,85 @@
-{% include "repurchaseEmailSeries/partials/header.nunjucks" %}
-
-<table class="email-content">
-    <tr>
-        <td>
-            {% block preheader %}{% endblock %}
-        </td>
-    </tr>
-</table>
-
-{% include "repurchaseEmailSeries/partials/footer.nunjucks" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" href="../css/repurchaseEmailSeries/main_final.css">
+</head>
+<body>
+    <table class="main-container">
+        <tr class="main-row">
+            <td class="main-column">
+                <table class="header-main">
+                    <tr>
+                        <td class="welcome half">{% block headerIntro %}{% endblock %}</td>
+                        <td class="browser half"><a href="*|ARCHIVE|*">View in Browser</a></td>
+                    </tr>
+                </table>
+                <table class="header-logo">
+                    <tr>
+                        <td class="logo half"><a href="https://www.devumi.com"><img src="https://gallery.mailchimp.com/29c540c4930645d6f6c2b7f9f/images/0b37fda2-6d11-4a6f-a5c8-70e2c325c373.png" alt="Devumi" src=""/></a></td>
+                        <td class="social half">
+                            <a href=""><img src="../images/repurchaseEmailSeries/twitter.png" alt="Twitter"></a>
+                            <a href=""><img src="../images/repurchaseEmailSeries/linkedin.png" alt="LinkedIn"></a>
+                            <a href=""><img src="../images/repurchaseEmailSeries/hyperlink.png" alt=""></a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="email-content">
+                    <tr class="title-content">
+                        <td>
+                            <h1>{% block titleStatement %}{% endblock %}</h1>
+                            <p>{% block titleDescription %}{% endblock %}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {% block titleImage %}{% endblock %}
+                        </td>
+                    </tr>
+                    <tr class="mid-section-description">
+                        <td>
+                            {% block middleDescription %}{% endblock %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="planDescription"></td>
+                                    <td class="planpPricing"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="footer-main">
+                    <tr>
+                        <td class="social-icons">
+                            <a href="">
+                                <img src="../images/repurchaseEmailSeries/twitter.png" alt="Twitter">
+                            </a>
+                            <a href="">
+                                <img src="../images/repurchaseEmailSeries/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="">
+                                <img src="../images/repurchaseEmailSeries/hyperlink.png" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="devumi-foot-logo">
+                        <td><a href="https://www.devumi.com"><img src="https://gallery.mailchimp.com/29c540c4930645d6f6c2b7f9f/images/0b37fda2-6d11-4a6f-a5c8-70e2c325c373.png" alt="Devumi" src=""/></a></td>
+                    </tr>
+                    <tr class="foot-content">
+                        <td>
+                            <p><strong>Copyright &copy; Devumi</strong>, All rights reserved.<br/> We send helpful guides, tips and speical offers to customers who have opted in while ordering.</p>
+                            <p>Our mailing address is:<br/>Devumi<br/>PO Box 4033<br/>West Palm Beach, FL 33402</p>
+                            <p><strong>Add us to your addressbook</strong></p>
+                            <p>Whant to change how you receive these emails?<br/>You can update your preferences or <a href="#">unsubscribe</a> from this list.</p>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+    </html>

@@ -1,0 +1,48 @@
+.footer-main {
+    background: #DFDFDF;
+    width: 100%;
+
+    .social-icons {
+        height: 100px;
+        a { text-decoration: none; }
+
+        img {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+            padding: 0 10px;
+        }
+    }
+
+    .devumi-foot-logo {
+        height: 50px;
+
+        td {
+            text-align: left;
+            padding: 0 30px;
+        }
+    }
+
+    .foot-content {
+        text-align: left;
+        height: 350px;
+
+        td {
+            padding: 0 30px;
+
+            p {
+                margin-bottom: 30px;
+                color: #A8A8A8;
+            }
+
+            p:last-child { font-size: 13px; }
+
+            a {
+                text-decoration: none;
+                color: #A8A8A8;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

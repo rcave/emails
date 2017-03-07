@@ -1,5 +1,11 @@
 {% extends "repurchaseEmailSeries/repurchaseTemplate.nunjucks" %}
 
-{% block preheader %}
-    <h2>A gulp workflow for building HTML emails</h2>
-{% endblock %}
+{% block headerIntro %}Welcome{% endblock %}
+
+{% block titleStatement %}Welcome Back!{% endblock %}
+
+{% block titleDescription %}Thank you for making Devumi instrumental in growing your social influence.{% endblock %}
+
+{% block titleImage %}{% endblock %}
+
+{% block middle Description %}{% endblock %}
